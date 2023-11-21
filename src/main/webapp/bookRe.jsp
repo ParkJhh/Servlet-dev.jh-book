@@ -22,7 +22,7 @@
     <p></p>
     <hr>
     <h1> 도서 수정은 여기서! </h1>
-    <form  action="BookSet" method="post">
+    <form  action="BookRe" method="post">
         <label>책 타입 : </label>
         <select name="booktype">
             <option value="Book"> 북 타입(기본형) </option>

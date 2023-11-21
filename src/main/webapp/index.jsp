@@ -23,5 +23,8 @@
 <a href=bookDe.jsp title="도서 삭제(삭제는 신중히!!!)">  도서 삭제</a>
 <p></p>
 
+<a href=findnumber.jsp >  숫자 찾기</a>
+<p></p>
+
 </body>
 </html>

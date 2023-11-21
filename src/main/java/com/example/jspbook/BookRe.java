@@ -19,7 +19,8 @@ public class BookRe extends HttpServlet {
 
         PrintWriter out = resp.getWriter();
 
-        if (BookSet.bookList.get(Long.parseLong(req.getParameter("bookid"))) != null) {
+        //리플레이스로 수정해야 함
+        if (req.getParameter("bookid") != null) {
             if(req.getParameter("booktype").equals("Book")) {
                 String[] bookInfo = new String[5];
                 bookInfo[0] = req.getParameter("bookid");
@@ -27,7 +28,7 @@ public class BookRe extends HttpServlet {
                 bookInfo[2] = req.getParameter("bookwriter");
                 bookInfo[3] = req.getParameter("isbn");
                 bookInfo[4] = req.getParameter("publishdate");
-                try{
+                try {
                     LocalDate LocalDateErr = LocalDate.parse(bookInfo[4]);
                 }
                 catch (DateTimeParseException e) {
